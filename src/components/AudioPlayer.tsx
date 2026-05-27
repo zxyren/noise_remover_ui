@@ -146,11 +146,11 @@ export default function AudioPlayer({
       {/* File header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div className="flex items-center gap-2 min-w-0">
-          <TrafficCone size={23} className="text-orange-600" />
-          <h1 className="font-medium text-zinc-200 truncate text-lg">
+          <TrafficCone size={30} className="text-orange-600" />
+          <h1 className="font-medium text-zinc-200 truncate text-xl">
             {file.name}
           </h1>
-          <span className="text-[10px] sm:text-xs bg-white/20 px-1 rounded-md text-zinc-300 shrink-0">
+          <span className="text-sm sm:text-sm bg-white px-1 rounded-md text-zinc-900 font-medium">
             {(file.size / (1024 * 1024)).toFixed(2)} MB
           </span>
         </div>
