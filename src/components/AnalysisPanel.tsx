@@ -9,7 +9,9 @@ function StatRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between py-1.5 border-b border-white/[0.05] last:border-0">
       <p className="text-sm sm:text-base font-medium text-zinc-200">{label}</p>
-      <p className="text-[11px] sm:text-xs font-semibold text-violet-500">{value}</p>
+      <p className="text-[11px] sm:text-xs font-semibold text-violet-500">
+        {value}
+      </p>
     </div>
   );
 }
@@ -18,14 +20,16 @@ function BarRow({ label, pct }: { label: string; pct: number }) {
   return (
     <div className="space-y-1.5">
       <div className="flex justify-between">
-        <p className="text-sm sm:text-base font-medium text-zinc-200">{label}</p>
+        <p className="text-sm sm:text-base font-medium text-zinc-200">
+          {label}
+        </p>
         <p className="text-[11px] sm:text-xs font-semibold text-violet-500">
           {(pct * 100).toFixed(1)}%
         </p>
       </div>
       <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
         <div
-          className="h-full bg-violet-500 rounded-full transition-all duration-500"
+          className="h-full bg-white rounded-full transition-all duration-500"
           style={{ width: `${Math.min(pct * 100, 100)}%` }}
         />
       </div>

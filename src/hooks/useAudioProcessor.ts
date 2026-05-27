@@ -25,9 +25,9 @@ export type Settings = {
 
 const DEFAULT_SETTINGS: Settings = {
   strength: 0.92,
-  residualGate: 0.55,
-  hfBoostDb: 10,
-  noisePercentile: 12,
+  residualGate: 1.0,
+  hfBoostDb: 0,
+  noisePercentile: 40,
   outFormat: "wav",
 };
 
