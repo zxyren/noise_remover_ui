@@ -197,7 +197,7 @@ export default function AudioPlayer({
             </div>
             {enhancedUrl && (
               <a
-                className="ml-auto sm:ml-auto flex items-center gap-1 text-xs sm:text-sm text-violet-400 hover:text-violet-300 transition-colors"
+                className="ml-auto sm:ml-auto flex items-center gap-1 text-xs sm:text-sm text-blue-400 hover:text-blue-300 transition-colors"
                 href={enhancedUrl}
                 download={`${file.name.replace(/\.[^/.]+$/, "")}_denoised.${outFormat}`}
               >
@@ -234,7 +234,7 @@ export default function AudioPlayer({
             "relative z-10 w-full flex items-center justify-center gap-2 rounded-[13px] px-4 py-3.5 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-200",
             busy
               ? "bg-zinc-900/0 text-zinc-400 cursor-not-allowed"
-              : "bg-violet-600/30 hover:bg-violet-500/10 transition-colors duration-300 border border-violet-500/50 text-white hover:shadow-[0_0_24px_rgba(124,92,252,0.4)]",
+              : "bg-blue-600/30 hover:bg-blue-500/10 transition-colors duration-300 border border-blue-500/50 text-white hover:shadow-[0_0_24px_rgba(124,92,252,0.4)]",
           ].join(" ")}
         >
           {busy ? (

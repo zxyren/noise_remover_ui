@@ -22,8 +22,8 @@ export default function AudioUploader({ onFile }: Props) {
     <label
       className={`flex flex-col items-center justify-center gap-3 border border-dashed rounded-xl p-8 sm:p-10 lg:p-14 text-center cursor-pointer transition-all duration-200 ${
         dragging
-          ? "border-violet-500 bg-violet-500/10"
-          : "border-white/10 hover:border-violet-500/60 hover:bg-violet-500/5"
+          ? "border-blue-500 bg-blue-500/10"
+          : "border-white/10 hover:border-blue-500/60 hover:bg-blue-500/5"
       }`}
       onDragOver={(e) => {
         e.preventDefault();
@@ -42,7 +42,7 @@ export default function AudioUploader({ onFile }: Props) {
         }}
       />
       <div
-        className={`w-14 h-14 rounded-full flex items-center justify-center border transition-colors duration-200 ${dragging ? "border-violet-500/40 text-violet-400" : "border-white/10 text-zinc-400"}`}
+        className={`w-14 h-14 rounded-full flex items-center justify-center border transition-colors duration-200 ${dragging ? "border-blue-500/40 text-blue-400" : "border-white/10 text-zinc-400"}`}
       >
         <Music />
       </div>

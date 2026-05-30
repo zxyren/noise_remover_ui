@@ -9,7 +9,7 @@ function StatRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between py-1.5 border-b border-white/[0.05] last:border-0">
       <p className="text-sm sm:text-base font-medium text-zinc-200">{label}</p>
-      <p className="text-[11px] sm:text-xs font-semibold text-violet-500">
+      <p className="text-[11px] sm:text-xs font-semibold text-blue-500">
         {value}
       </p>
     </div>
@@ -23,7 +23,7 @@ function BarRow({ label, pct }: { label: string; pct: number }) {
         <p className="text-sm sm:text-base font-medium text-zinc-200">
           {label}
         </p>
-        <p className="text-[11px] sm:text-xs font-semibold text-violet-500">
+        <p className="text-[11px] sm:text-xs font-semibold text-blue-500">
           {(pct * 100).toFixed(1)}%
         </p>
       </div>
